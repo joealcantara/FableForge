@@ -1,4 +1,6 @@
-# FableForge
+# FableForge Game Design Document
+
+
 
 ## Mechanics
 
@@ -10,3 +12,7 @@ Adventurers can also level up, and they have set classes, the classes they level
 The quests will be sometimes given by patrons and these represent high level characters who are involved in a battle for influence in the city. The quests will sometimes be random and sometimes be affected by storylines. The power balances between the patrons often switch as they carry out actions (successful and not successful) which increase their own influence in the city or decrease influence of others in the city.
 
 The city name is Blackwood Crossing.
+
+
+## Patrons
+
