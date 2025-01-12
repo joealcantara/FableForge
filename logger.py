@@ -6,3 +6,6 @@ class Logger:
     def close_logger(self):
         self.log.write("Log closed")
         self.log.close()
+
+    def write_to_log(self, message):
+        self.log.write(message + "\n")

@@ -23,6 +23,7 @@ class FableForge():
 
     def run_game(self):
         running = True
+        self.log.write_to_log("Test")
         while running:
             self._check_events()
             self._update_screen()

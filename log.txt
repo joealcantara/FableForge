@@ -1,2 +1,3 @@
 Log open
+Test
 Log closed
