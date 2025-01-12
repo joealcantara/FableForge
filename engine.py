@@ -9,14 +9,14 @@ class Engine:
     def rollDice(sides):
         return random.randrange(1, sides)
 
-    def createRandomCharacter(name, charClass = None):
-        strength = rollDice(20)
-        dexterity = rollDice(20)
-        constitution = rollDice(20)
-        intelligence = rollDice(20)
-        wisdom = rollDice(20)
-        charisma = rollDice(20)
-        age = rollDice(100)
+    def createRandomCharacter(self, name, charClass = None):
+        strength = self.rollDice(20)
+        dexterity = self.rollDice(20)
+        constitution = self.rollDice(20)
+        intelligence = self.rollDice(20)
+        wisdom = self.rollDice(20)
+        charisma = self.rollDice(20)
+        age = self.rollDice(100)
         if charClass == 'Warrior':
             return adv.Warrior(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma)
         else:
