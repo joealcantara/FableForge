@@ -5,7 +5,7 @@ import pygame, random, sys
 # Imports from other python scripts
 import adventurer as adv
 from logger import Logger
-import engine
+from engine import Engine
 from settings import Settings
 
 class FableForge():
@@ -17,6 +17,7 @@ class FableForge():
         self.clock = pygame.time.Clock()
         self.settings = Settings()
         self.log = Logger()
+        self.engine = Engine()
 
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("FableForge")
@@ -24,6 +25,7 @@ class FableForge():
     def run_game(self):
         running = True
         self.log.write_to_log("Test")
+        self.log.write_to_log("The dice rolled: " + str(Engine.rollDice(20)))
         while running:
             self._check_events()
             self._update_screen()

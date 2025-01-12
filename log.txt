@@ -1,3 +1,4 @@
 Log open
 Test
+The dice rolled: 19
 Log closed
