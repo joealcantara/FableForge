@@ -20,14 +20,22 @@ def createRandomCharacter(name, charClass = None):
         return adv.Adventurer(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma)
 
 def create_logger():
-    pass
+    file = open("log.txt", "w+")
+    file.write("Log open\n")
+    return file
+
+def close_logger(log):
+    log.write("Log closed")
+    log.close()
 
 
 def main():
+    log = create_logger()
     bob = createRandomCharacter('Bob')
     joe = createRandomCharacter('Joe', 'Warrior')
     bob.printStats()
     joe.printStats()
+    close_logger(log)
 
 if __name__ == "__main__":
     main()
