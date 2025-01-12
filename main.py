@@ -25,7 +25,7 @@ class FableForge():
 
     def run_game(self):
         running = True
-        self.log.write_to_log("Test")
+        self.log.write_to_log("Log Opened")
         self.log.write_to_log("The dice rolled: " + str(Engine.rollDice(20)))
         while running:
             self._check_events()
@@ -36,7 +36,6 @@ class FableForge():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 self.log.close_logger()
-                print('Game Ended')
                 running = False
                 pygame.quit()
                 sys.exit()
