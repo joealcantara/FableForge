@@ -1,4 +1,3 @@
-Log open
-[12-1-2025 15:26.37] - Test
-[12-1-2025 15:26.37] - The dice rolled: 1
+[12-1-2025 15:35.23] - Log Opened
+[12-1-2025 15:35.23] - The dice rolled: 15
 Log closed
