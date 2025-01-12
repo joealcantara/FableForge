@@ -19,6 +19,10 @@ def createRandomCharacter(name, charClass = None):
     else:
         return adv.Adventurer(name, age, strength, dexterity, constitution, intelligence, wisdom, charisma)
 
+def create_logger():
+    pass
+
+
 def main():
     bob = createRandomCharacter('Bob')
     joe = createRandomCharacter('Joe', 'Warrior')
