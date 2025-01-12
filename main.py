@@ -4,6 +4,7 @@ import pygame, random, sys
 
 # Imports from other python scripts
 import adventurer as adv
+import engine as eng
 from settings import Settings
 
 class FableForge():
@@ -17,6 +18,7 @@ class FableForge():
 
         self.screen = pygame.display.set_mode((self.settings.screen_width, self.settings.screen_height))
         pygame.display.set_caption("FableForge")
+
 
     def run_game(self):
         running = True
@@ -32,6 +34,7 @@ class FableForge():
             if event.type == pygame.QUIT:
                 print('Game Ended')
                 running = False
+                pygame.quit()
                 sys.exit()
 
 
