@@ -1,8 +1,11 @@
+# IMPORTS
+# Imports from Python Standard Libraries
+import random
+
+# Imports from other python scripts
 import adventurer as adv
 
 class Engine:
-
-
     def rollDice(sides):
         return random.randrange(1, sides)
 
