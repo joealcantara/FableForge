@@ -8,6 +8,34 @@ import adventurer as adv
 class Engine:
     def rollDice(sides):
         return random.randrange(1, sides)
+    
+    def playerTurn():
+        decision = rollDice(20)
+        if decision < 5:
+            world["player_influence"] += 1
+            world["ai_influence"] -= 1
+            print("Player Gains Influence")
+        elif decision < 15:
+            world["tension"] += 1
+            print("Tension Increases")
+        else:
+            world["player_influence"] -= 1
+            world["ai_influence"] += 1
+            print("AI gains Influence")
+
+    def AITurn():
+        decision = rollDice(20)
+        if decision < 5:
+            world["player_influence"] += 1
+            world["ai_influence"] -= 1
+            print("Player Gains Influence")
+        elif decision < 15:
+            world["tension"] -= 1
+            print("Tension Decreases")
+        else:
+            world["player_influence"] -= 1
+            world["ai_influence"] +=1
+            print("AI gains Influence")
 
     def createRandomCharacter(self, name, charClass = None):
         strength = self.rollDice(20)
