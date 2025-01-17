@@ -7,6 +7,9 @@ world = {
     "ai_influence": 50
 }
 
+def rollDice(sides):
+    return random.randomint(1, sides)
+
 def playerTurn():
     decision = rollDice(20)
     if decision < 5:
